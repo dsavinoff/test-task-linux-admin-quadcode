@@ -1,0 +1,11 @@
+---
+- name: Test play
+  hosts: all
+#  become: no
+#  gather_facts: yes
+
+  tasks:
+    - name: Test task
+      ansible.builtin.debug:
+        msg: "Test"
+...
